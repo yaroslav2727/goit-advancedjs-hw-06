@@ -2,8 +2,12 @@
   Використовуйте generics та інтерфейси, щоб виправити помилку в наступних класах:
 */
 
+interface PropsType<T> {
+  title: T,
+}
+
 class Component {
-  constructor (public props:T) {
+  constructor (public props:PropsType<string>) {
 
   }
 }
